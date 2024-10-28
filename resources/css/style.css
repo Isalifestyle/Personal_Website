@@ -140,48 +140,191 @@ header nav ul li a {
 section.projects
 {
     display:grid;
-    grid-template-columns: repeat(15, 100px);
-    grid-template-rows: repeat(15, 100px);
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(7, 100px);
 }
 section.projects h1
 {
     font-size:3rem;
-    grid-row: 1/ span 2;
-    grid-column: 9 / span 3;
+    grid-row: 1;
+    grid-column: 8 / span 2;
 }
 section button.project-button
 {
     background-color:black;
     color:white;
-    grid-column:8;
-    grid-row: 2;
+    grid-column:4 / span 2;
+    grid-row: 3 / span 2;
     font-size: 1.5rem;
     border-radius:8px;
+    margin-top:60px;
+    margin-bottom:60px;
     transition: background-color 0.5s ease; 
     transition: color 0.5s ease;
 }
 section button.project-button:hover
 {
-    background-color: rgb(195, 230, 230);
-    color:tomato;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:rgb(0, 0, 0);
 }
 .colmar
 {
-    grid-column:6 / span 10;
-    grid-row: 3 / span 10; ;
+    grid-column:6 / span 50;
+    grid-row: 2 / span 4; ;
     margin-left:10px;
+    
+    
 }
 .colmar-info {
-    grid-row: 2/ span 4 ; /* This occupies row 2 */
+    grid-row: 3 ; /* This occupies row 2 */
     grid-column: 9; /* This occupies columns 2 to 5 */
+    background-color:white;
+    font-size:1.75em;
+    border:2px solid black
+    
 }
 
 .colmar-img {
-    grid-row: 2; 
-    grid-column: 8; 
+    grid-row:3 ; 
+    grid-column: 10; 
+    background-color:white;
+    border:2px solid black
     
 }
 .colmar-img img {
     width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+/* Contact Me */
+.contact
+{
+    display:flex;
+    width:1500px;
+    height:800px;
+}
+.contact-left
+{
+    display:flex;
+    flex-direction:column;
+    height:400px;
+    width:400px;
+    margin-left: 400px;
+}
+
+.location
+{
+    display:flex;
+    padding-right:10px;
+}
+.location img
+{
+    height:150px;
+    width:150px;
+    margin-right:20px;
+}
+.location h3
+{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+
+.call
+{
+    display:flex;
+    margin:20px 0px 20px 0px;
+}
+.call img
+{
+    height:150px;
+    width:150px;
+}
+.call h3
+{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.email
+{
+    display:flex;
+}
+
+.email img
+{
+    height:150px;
+    width:150px;
+}
+.email h3
+{
+    margin-top:30px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.contact-right{
+   
+    margin-left: 100px;
+    display:flex;
+    flex-direction:column;
+}
+.touch 
+{
+    font-size: 3em;
+    margin-bottom:10px;
+    color:beige;
+}
+.name-email
+{
+    margin-bottom:10px;
+}
+.submit-form
+{
+    margin-top:15px;
+    margin-left:100px;
+    width:100px;
+    height:50px;
+    border-radius:10px;
+}
+
+.submit-form
+{
+    font-size:18px;
+    
+    gap:10px;
+    border:none;
+    cursor:pointer;
+    background: linear-gradient(270deg, #878a63, #e3ca71);
+}
+.submit-form img
+
+{
+    width:15px;
+    height:15px;
+    
+}
+
+/* Horizontal line */
+.hr 
+{
+    width:100px;
+    margin-bottom: 25px;
+}
+
+.contact-inputs
+{
+    padding-left:25px;
+    border-radius:50px;
+}
+.contact-right textarea
+{
+    padding-left:20px;
+    border-radius:20px;
+}
+
+.contact-inputs:focus
+{
+    border: 2px solid #448ae0;
+    outline:none;
 }

@@ -6,6 +6,8 @@ let element = document.querySelector('.colmar'); // Select the element to show/h
 function toggleDropdown() {
     if (element.style.display === 'none' || element.style.display === '') {
         element.style.display = 'grid';
+        
+       
     } else {
         element.style.display = 'none';
     }
