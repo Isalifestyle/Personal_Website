@@ -17,17 +17,17 @@
         </section>
         <nav>
             <ul>
-                <li><a href = '#Aboutme'>About Me &nbsp;&nbsp;|</a>
-                <li><a href = '#Projects'>Projects &nbsp;&nbsp;|</a></li>
-                <li><a href = '#Skills'>Skills &nbsp;&nbsp;|</a></li>
-                <li><a href = '#Contact'>Contact </a></li>
+                <li><a href = '#about-me'>About Me &nbsp;&nbsp;|</a>
+                <li><a href = '#projects'>Projects &nbsp;&nbsp;|</a></li>
+                <li><a href = '#contact'>Contact </a></li>
             </ul>
         </nav>
+            <img class = "moon" src ="./resources/images/moon-regular.svg" alt = ''>
      </header>
     
      <main>
      <!-- Introduction -->
-      <section class = 'introduction'>
+      <section class = 'introduction' id = 'introduction'>
         <div class = 'intro-Info'>
         <h1>Hello, I am<br> Omar Isa</h1>
         <h3>An Aspiring Machine Learning Engineer!<br><br>I have experience in Python, AI algorithms, Data Structures, and Front End Development.</h3>
@@ -38,7 +38,7 @@
 
       </section>
       <!-- About Me -->
-      <section class = 'about-me'>
+      <section class = 'about-me' id = 'about-me'>
         <h1>About Me</h1>
         <div class = 'about-me-img'>
             <img src = './resources/images/walkingmath.webp'>
@@ -49,7 +49,7 @@
       </section>
 
       <!-- Projects -->
-      <section class = 'projects'>
+      <section class = 'projects' id = 'projects'>
         <h1>Projects</h1>
         <button class = 'project-button'>Colmar Academy</button>
         <div class = 'colmar' style = "display:none;">
@@ -62,15 +62,13 @@
                     • Published the website on GitHub Pages, showcasing proficiency in web development and deployment.
                 </h5>
             </div>
-            <div class = 'colmar-img'>
-                <img src = './resources/images/Colmar_Academy.jpg'>
-            </div>
+           
         </div>
        
       </section>
 
       <!-- Contact me -->
-       <section class = "contact">
+       <section class = "contact" id = 'contact'>
             <div class = "contact-left">
                 <div class = "location">
                     <img src = "./resources/images/location-dot-solid.svg">
@@ -108,6 +106,24 @@
                 <button class = "submit-form">Submit <img src = "resources/images/arrow-right-solid.svg" alt = ''></button>
             </div>
        </section>
+       <hr>
+       <!-- Footer -->
+        <footer>
+            <h1>
+                Omar 
+            </h1>
+            <h3 class = 'description'>Aspiring Machine Learning Engineer</h3>
+            <a href = '#about-me'class = 'nav-about'>About Me</a>
+            <a href = "#projects" class = 'nav-projects'>Projects</a>
+            <a class = "linkedin" href =  "https://www.linkedin.com/in/omarisa" target = "_blank">
+                <img  class = 'linkedin' src = './resources/images/linkedin-brands-solid.svg'> 
+            </a>
+            <a class = "github" href = "https://github.com/Isalifestyle" target = "_blank" >
+                <img src = './resources/images/github-brands-solid.svg'>
+
+            </a>
+            <h7>© Omar Isa. All Rights Reserved</h7>
+        </footer>
 
     </main>
     <script src = 'script.js'></script>
