@@ -13,7 +13,8 @@
      <header>
         
         <section class = 'logo'>
-            <img class = 'brain'src = "resources/images/brain-solid.svg">
+            <img class = 'brain-light'src = "./resources/images/brain-solid.svg">
+            <svg class = "brain-dark" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M570-120q-13 0-25.5-2.5T520-130v-700q12-5 24.5-7.5T570-840q52 0 89.5 35t40.5 86q59 8 99.5 53T840-560q0 22-5.5 42T818-480q11 18 16.5 38.5T840-400q0 62-40.5 106.5T699-241q-5 50-41.5 85.5T570-120Zm-180 0q-51 0-88-35.5T260-241q-60-8-100-53t-40-106q0-21 5.5-41.5T142-480q-11-18-16.5-38t-5.5-42q0-61 40-105.5t99-52.5q3-51 41-86.5t90-35.5q13 0 25.5 3t24.5 8v699q-12 5-24.5 7.5T390-120Z"/></svg>
         </section>
         <nav>
             <ul>
@@ -22,7 +23,10 @@
                 <li><a href = '#contact'>Contact </a></li>
             </ul>
         </nav>
-            <img class = "moon" src ="./resources/images/moon-regular.svg" alt = ''>
+            <button id = "theme-switch" >
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+            </button>
      </header>
     
      <main>
@@ -62,6 +66,9 @@
                     • Published the website on GitHub Pages, showcasing proficiency in web development and deployment.
                 </h5>
             </div>
+            <div class = 'colmar-img'>
+                <img src = './resources/images/Colmar_Academy.jpg'>
+            </div>
            
         </div>
        
@@ -71,19 +78,22 @@
        <section class = "contact" id = 'contact'>
             <div class = "contact-left">
                 <div class = "location">
-                    <img src = "./resources/images/location-dot-solid.svg">
+                    <img src = "./resources/images/location-dot-solid.svg" class = "light">
+                    <img src = "./resources/images/location-white.svg" class = "dark">
                     <h3>
                         <b>LOCATION</b><br> University of North Carolina at Charlotte
                     </h3>
                 </div>
                 <div class = "call">
-                    <img src = './resources/images/phone-solid.svg'>
+                    <img src = './resources/images/phone-solid.svg' class = 'light'>
+                    <img src = "./resources/images/phone-white.svg" class = 'dark'>
                     <h3>
                         <b>CALL ME</b> <br> 980-253-2908
                     </h3>
                 </div>
                 <div class = 'email'>
-                    <img src = "resources/images/envelope-solid.svg">
+                    <img src = "resources/images/envelope-solid.svg" class = 'light'>
+                    <img src = "./resources/images/envelope-white.svg" class = 'dark'>
                     <h3>
                         <b>EMAIL</b><br> Omarisaedu@gmail.com
                     </h3>
@@ -116,10 +126,12 @@
             <a href = '#about-me'class = 'nav-about'>About Me</a>
             <a href = "#projects" class = 'nav-projects'>Projects</a>
             <a class = "linkedin" href =  "https://www.linkedin.com/in/omarisa" target = "_blank">
-                <img  class = 'linkedin' src = './resources/images/linkedin-brands-solid.svg'> 
+                <img  class = 'light' src = './resources/images/linkedin-brands-solid.svg'> 
+                <img src = "./resources/images/linkedin-white.svg" class = "dark">
             </a>
             <a class = "github" href = "https://github.com/Isalifestyle" target = "_blank" >
-                <img src = './resources/images/github-brands-solid.svg'>
+                <img src = './resources/images/github-brands-solid.svg' class = "light">
+                <img src = "./resources/images/Github-white.svg" class = "dark">
 
             </a>
             <h7>© Omar Isa. All Rights Reserved</h7>
