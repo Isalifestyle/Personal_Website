@@ -56,7 +56,7 @@
       <section class = 'projects' id = 'projects'>
         <h1>Projects</h1>
         <button class = 'project-button'>Colmar Academy</button>
-        <div class = 'colmar' style = "display:none;">
+        <div class = 'colmar' >
             <div class = 'colmar-info'>
                 <h3>Colmar Academy</h3>
                 <h5>
@@ -100,20 +100,18 @@
                 </div>
             </div>
             <div class = "contact-right">
-                <form action="https://api.web3forms.com/submit" method="POST" class = 'contact-top-left'>
-
-                </form>
-
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="cc30c6ba-e2b9-4497-88b9-8a5bca07df87">
                 <h1 class = 'touch'>Get In Touch</h1>
                 <div class = "hr"><hr style = " background-color:grey; border-radius:10px; width:120px; height:5px; padding-left:20px;" ></div>
                 <div class = 'name-email'>
-                <input type="hidden" name="cc30c6ba-e2b9-4497-88b9-8a5bca07df87
-                " value="YOUR_ACCESS_KEY_HERE">
-                <input type = 'text' name="name" placeholder = "Your Name" class = 'contact-inputs' required >
-                <input type = 'email' name="name" placeholder = "Your Email" class = 'contact-inputs' required >
+                <input type = 'text' name="name" placeholder = "Your Name" class = 'contact-inputs' id = "text" required >
+                <input type = 'email' name="email" placeholder = "Your Email" class = 'contact-inputs' required >
                 </div>
-                <textarea name = 'message' rows =  '10' cols = "40" placeholder = "Your Message" class = 'contact-inputs' required></textarea>
+                <textarea name = 'message' rows =  '10' cols = "50" placeholder = "Your Message" class = 'contact-inputs' required></textarea>
                 <button class = "submit-form">Submit <img src = "resources/images/arrow-right-solid.svg" alt = ''></button>
+
+                </form>
             </div>
        </section>
        <hr>
